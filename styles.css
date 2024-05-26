@@ -1,0 +1,414 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header styling */
+.header {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Tabs styling */
+.tabs {
+    margin-left: -5px;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
+
+.tabs button {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    white-space: nowrap;    
+    text-overflow: ellipsis; 
+    margin: 5px;
+}
+
+.tabs button:last-child {
+    margin-right: 0;
+}
+
+.tabs button:hover {
+    background-color: #495057;
+}
+
+/* Output container styling */
+.output {
+    margin-top: 20px;
+}
+
+.output p {
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.output p:last-child {
+    margin-bottom: 0;
+}
+
+/* Table styling */
+.table-container {
+    margin-top: 5px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.method-column {
+    width: 100px; 
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.path-column {
+    text-align: left; 
+    font-family: monospace; 
+    font-weight: 600;
+    color: #3b4151;
+    font-size: 16px;
+}
+
+.action-column {
+    width: 80px; 
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.result-column {
+    width: 80px; 
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.table-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.table-container button:hover {
+    background-color: #1b731f;
+}
+
+.table-container tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.method-get {
+    background-color: #61affe; /* Blue for GET */
+    border-radius: 3px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 40px;
+    padding: 6px 12px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+.method-post {
+    background-color: #28a745; /* Green for POST */
+    border-radius: 3px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 80px;
+    padding: 6px 0;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+.method-put {
+    background-color: #fd7e14; /* Orange for PUT */
+    border-radius: 3px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 80px;
+    padding: 6px 0;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+.method-delete {
+    background-color: #dc3545; /* Red for DELETE */
+    border-radius: 3px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 80px;
+    padding: 6px 0;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+/* Style untuk container dropdown */
+.sprint-filter {
+    position: relative;
+  }
+  
+  /* Style untuk elemen select */
+  .sprint-select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 250px; /* Sesuaikan lebar dropdown dengan kebutuhan */
+    margin-top: 30px;
+    font-family: sans-serif;
+    padding: 5px 40px 5px 10px;
+    margin-right: 40px;
+  }
+  
+  /* Style untuk dropdown saat di-hover */
+  .sprint-select:hover {
+    border-color: #000000;
+  }
+  
+  /* Style untuk elemen select */
+  .server-select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 175px; /* Sesuaikan lebar dropdown dengan kebutuhan */
+    margin-top: 30px;
+    font-family: sans-serif;
+    padding: 5px 40px 5px 10px;
+    width: 40%;
+
+  }
+  
+  /* Style untuk dropdown saat di-hover */
+  .server-select:hover {
+    border-color: #000000;
+  }
+  
+
+.output-status {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+.pass {
+    background-color: #45a049;
+}
+
+.fail {
+    background-color: red;
+}
+
+.btn {
+    display: block;
+}
+
+.btn.disable {
+    display: none;
+}
+
+.btn.running {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.result-column a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    line-height: 20px;
+}
+
+.result-column a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3b4151;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+h3 {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3b4151;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sprint-filter {
+    display: block;
+    gap: 20px; /* Adjust the space between filters as needed */
+}
+
+.sprint-filter > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sprint-filter span {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.btn-all {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    top: 25px;
+    right: 80px;
+}
+
+.btn-all:hover {
+    background-color: #1b731f;
+}
+
+.btn-jwt {
+    position: relative; /* Memastikan posisi yang tepat */
+    right: -130px;
+    bottom: -5px;
+    border-radius: 5px;
+    padding: 3px 3px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.btn-jwt img {
+    width: 20px; /* Lebar gambar */
+    height: 20px; /* Tinggi gambar */
+    float: right; /* Mengatur gambar ke sebelah kanan */
+}
+
+.btn-jwt:hover {
+    border-color: #000000; /* Warna latar belakang tombol saat di atasnya */
+}
+
+.title-font {
+    color: #575757;
+    font-family: sans-serif;
+    font-size: 12px;
+    word-break: break-word;
+}
+
+
+.loading-overlay {
+    position: fixed; /* Menggunakan fixed agar overlay tetap di tempat saat scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Ubah sesuai kebutuhan */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-spinner {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
